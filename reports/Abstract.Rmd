@@ -1,0 +1,22 @@
+Abstract
+Yue Zhang and Dinesh Reddy Poddaturi
+
+Socioeconomic indicators like the poverty rate, population change, unemployment rate, and education levels vary across the nation. USDA ERS has compiled the latest data on these measures into a mapping and data display/download application that allows users to identify and compare States and Counties on these indicators.
+For our project, we would like to use the techniques: reading multiple files, tidying data, joining data from multiple files, functional programming, scraping data from websites and data visualization.
+From the available datasets, we will fit a multiple regression model for 2015 poverty data, using the variables in Unemployment, Population and Education files. After fitting the model, we will predict the poverty rate for the years from 2011 to 2014 (these data are not available in the website to download). We will use web scraping to download missing data in our files and finally make some visualization with the data.
+The following variables are used to fit the model
+Dataset	Useful variables
+PovertyEstimates.csv	Estimate of people of all ages in poverty 2014, 
+Estimate of median household income 2015
+Unemployment.csv	Unemployment rate 2015
+Population.csv	Net international migration 2015, 
+Net domestic migration 2015,
+Net migration 2015
+Residual_2015
+Education.csv	Less than a high school diploma 2011-2015,
+High school diploma only 2011-2015,
+Some college or associate's degree 2011-2015,
+Bachelor's degree or higher 2011-2015
+ 
+By using these we can compare different states in the nationwide, different counties in the state wide and see the trends of poverty rate in states and counties. 
+

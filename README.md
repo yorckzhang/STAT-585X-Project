@@ -1,2 +1,2 @@
 # STAT-585X-Project
-This repository contains data and code for STAT 585X project
+This repository contains data, code and reports for STAT 585X project

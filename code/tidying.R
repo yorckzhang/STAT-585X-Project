@@ -26,7 +26,6 @@ educationTidy <- function(education){
   education_tidy <- education_tidy %>% gather(key="TypeofEducation-Year",value="Number",4:23) %>% 
     separate(`TypeofEducation-Year`,into=c("TypeofEducation","Year"),sep="-")
   
-  row.names(education_tidy) <- NULL
   
   return (education_tidy)
 }
@@ -42,7 +41,7 @@ populationTidy <- function(population){
   #here we gather the data and split to give us a tidy format of our data 
   population_tidy<- population_tidy %>% gather(key="Type-Year",value="Number",4:21) %>% separate(`Type-Year`,into=c("Type","Year"))
   
-  row.names(population_tidy) <- NULL
+
   
   return(population_tidy)
   
@@ -59,7 +58,7 @@ povertyTidy <- function(poverty){
   #here we gather the data us a tidy format of our data 
   poverty_tidy_2015 <- poverty_tidy_2015 %>% gather(key="Type",value="Number",4:6)
   
-  row.names(poverty_tidy_2015) <- NULL
+
   
   return (poverty_tidy_2015)
   
@@ -81,7 +80,7 @@ unemploymentTidy <- function(unemployment){
   unemployment_tidy <- unemployment_tidy %>% gather(key="EmploymentType-year", value="Number",4:21) %>% 
     separate(`EmploymentType-year`,into=c("Employment Type", "Year"))
   
-  row.names(unemployment_tidy) <- NULL
+
   
   return(unemployment_tidy)
   

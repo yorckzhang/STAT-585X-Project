@@ -3,7 +3,6 @@ library(readxl)
 library(lubridate)
 
 library(plotly)
-library(plyr)
 library(maps)
 library(mapproj)
 
